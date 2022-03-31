@@ -3,9 +3,18 @@ h1{
     font-size: x-large;
 }
 
-body p{
-    color: rgb(214, 59, 32);
+div{
+    position: relative;
+    /* border: 3px solid #73AD21; */
 }
+
+div {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    /* border: 3px solid black; */
+  }
 
 tr > td{
     color: navy;
@@ -20,4 +29,86 @@ body{
     background-image: url("imgoffice.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.rectangle{
+    height: 60px;
+    width: 150px;
+    background-color: gray;
+    border: solid white;
+}
+
+.square1{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+
+.square2{
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    position: relative;
+    left: 3px;
+    top: 2px;
+}
+
+
+#overflow{
+    height: 200px;
+    overflow: auto;
+}
+
+div:hover{
+    background-color: pink;
+}
+
+div:first-child{
+   color: red; 
+}
+
+/* div:not(#overflow){
+    background-color: crimson;
+} */
+
+
+
+#div1 {
+    background-color: red;
+}
+
+#div2 {
+    background-color: blue;
+}
+
+#div3 {
+    background-color: green;
+}
+
+#div4 {
+    background-color: purple;
+}
+
+@media only screen and (min-width: 600px) {
+    div {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    div {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    div {
+        width: 25%;
+        float: left;
+    }
 }
