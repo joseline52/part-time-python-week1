@@ -1,0 +1,23 @@
+h1{
+    color: palevioletred;
+    font-size: x-large;
+}
+
+body p{
+    color: rgb(214, 59, 32);
+}
+
+tr > td{
+    color: navy;
+}
+
+h2 + p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aqua;
+}
+
+body{
+    background-image: url("imgoffice.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
